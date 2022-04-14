@@ -2,10 +2,8 @@ from fastapi import FastAPI
 from sqlalchemy.orm import sessionmaker
 from api_classes import CoffeeAPI, PeopleAPI
 from db_creation import main, Coffee, People, PeopleCoffee
+from settings import *
 
-# change this information if it isn't correct
-POSTGRESQL_LOGIN = 'postgres'
-POSTGRESQL_PASSWORD = '123456'
 
 engine = main(POSTGRESQL_LOGIN, POSTGRESQL_PASSWORD)
 Session = sessionmaker(bind=engine, autoflush=True)
