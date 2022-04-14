@@ -1,4 +1,4 @@
-#Проект Coffee House
+<h1>Проект Coffee House</h1>
 
 Инструкции по использованию:
 1. В директории с проектом выполните команду <code>pip install -r requirements.txt</code>
